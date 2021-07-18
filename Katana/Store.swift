@@ -51,15 +51,16 @@ open class PartialStore<S: State>: AnyStore {
   public typealias StateInitializer<T: State> = () -> T
 
   /// The current state of the application
+  fileprivate var currentState: S
   open fileprivate(set) var state: S
-  
+
   /**
    Implementation of the AnyStore protocol.
    
    - seeAlso: `AnyStore`
    */
   public var anyState: State {
-    return self.state
+    return self.currentState
   }
   
   /**
@@ -67,7 +68,7 @@ open class PartialStore<S: State>: AnyStore {
    - parameter state: the initial state of the store
   */
   internal init(state: S) {
-    self.state = state
+    self.currentState = state
   }
   
   /**
@@ -347,7 +348,7 @@ private extension Store {
    - parameter stateInitializer: the closure used to create the first configuration of the state
   */
   private func initializeInternalState(using stateInizializer: StateInitializer<S>) {
-    self.state = stateInizializer()
+    self.currentState = stateInizializer()
     // invoke listeners (always in main queue)
     DispatchQueue.main.async {
       self.listeners.values.forEach { $0() }
@@ -376,7 +377,7 @@ private extension Store {
       approach this is to dispatch a side effect. This will guarantee that this method will work correctly
     """)
     
-    return self.state
+    return self.currentState
   }
 }
 
@@ -419,14 +420,14 @@ fileprivate extension Store {
     }
     
     let logEnd = SignpostLogger.shared.logStart(type: .stateUpdater, name: stateUpdater.debugDescription)
-    let newState = stateUpdater.updatedState(currentState: self.state)
+    let newState = stateUpdater.updatedState(currentState: self.currentState)
     logEnd()
     
     guard let typedNewState = newState as? S else {
       preconditionFailure("Action updatedState returned a wrong state type")
     }
     
-    self.state = typedNewState
+    self.currentState = typedNewState
     
     // listener are always invoked in the main queue
     DispatchQueue.main.async {
@@ -518,14 +519,14 @@ fileprivate extension Store {
     
     let logEnd = SignpostLogger.shared.logStart(type: .action, name: dispatchable.debugDescription)
     
-    let newState = action.updatedState(currentState: self.state)
+    let newState = action.updatedState(currentState: self.currentState)
     
     guard let typedNewState = newState as? S else {
       fatalError("Action updatedState returned a wrong state type")
     }
     
-    let previousState = self.state
-    self.state = typedNewState
+    let previousState = self.currentState
+    self.currentState = typedNewState
     
     // executes the side effects, if needed
     self.triggerSideEffect(for: action, previousState: previousState, currentState: typedNewState)
