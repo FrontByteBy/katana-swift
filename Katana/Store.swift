@@ -69,6 +69,7 @@ open class PartialStore<S: State>: AnyStore {
   */
   internal init(state: S) {
     self.currentState = state
+    self.state = state
   }
   
   /**
@@ -348,9 +349,12 @@ private extension Store {
    - parameter stateInitializer: the closure used to create the first configuration of the state
   */
   private func initializeInternalState(using stateInizializer: StateInitializer<S>) {
-    self.currentState = stateInizializer()
+    let newState = stateInizializer()
+    self.currentState = newState
+    
     // invoke listeners (always in main queue)
     DispatchQueue.main.async {
+      self.state = newState
       self.listeners.values.forEach { $0() }
     }
     self.initializedInterceptors = Store.initializedInterceptors(self.interceptors, sideEffectContext: self.sideEffectContext)
@@ -431,6 +435,7 @@ fileprivate extension Store {
     
     // listener are always invoked in the main queue
     DispatchQueue.main.async {
+      self.state = typedNewState
       self.listeners.values.forEach { $0() }
     }
   }
@@ -535,6 +540,7 @@ fileprivate extension Store {
     
     // listener are always invoked in the main queue
     DispatchQueue.main.async {
+      self.state = typedNewState
       self.listeners.values.forEach { $0() }
     }
   }
