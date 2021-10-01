@@ -8,9 +8,10 @@ target 'Katana' do
 
   target 'KatanaTests' do
     inherit! :search_paths
-    
+
     pod 'Quick', '~> 1.3'
     pod 'Nimble', '~> 7.3'
-    pod 'HydraAsync', '~> 2.0.6'
+
+    podspec
   end
 end

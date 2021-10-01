@@ -11,7 +11,6 @@
 		00B1F59F5948B4C7012968E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E318AACF9E02F567AAB472 /* UIKit.framework */; };
 		039CA92BE567A7D56E9B2351 /* ActionWithSideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438277B00AFC1535FA591721 /* ActionWithSideEffect.swift */; };
 		07DBF4D74621CB45D566AB99 /* LegacyActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A95F67E2C2F2D6BD497ABBC /* LegacyActionTests.swift */; };
-		11707534172E0265D7D3986E /* Pods_Katana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C50C088FA6B36DF4BB1FA1DE /* Pods_Katana.framework */; };
 		1EF2A683918B3EB64860A07D /* AsyncAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9F24C8E581B95AA6AD190 /* AsyncAction.swift */; };
 		2162C7666A08C7B18B976626 /* LegacyAsyncActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383627495B9D649724B73C82 /* LegacyAsyncActionTests.swift */; };
 		218218587D0398EF6D1876A9 /* DispatchableLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF6DACFE402807510F4A26B /* DispatchableLogger.swift */; };
@@ -19,7 +18,7 @@
 		27436ED155BDC925BD7E4CCF /* Promise+Katana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC6E342950FF116DBF0D98F /* Promise+Katana.swift */; };
 		2A1318BCCE790FFF7BDA9B09 /* LegacyDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C8EC8C3DBD192CFB3436F /* LegacyDependencyContainer.swift */; };
 		2C20D623B6079C409C99ACD4 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA099DDCCAFCC695FFA33F7 /* Interceptor.swift */; };
-		3B1356E21E776DA327969AC3 /* Pods_KatanaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9692BAB0AF1940D6AB41CCEC /* Pods_KatanaTests.framework */; };
+		301BF6260D13372FA57D128A /* Pods_Katana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF98471F54D509D1E8CE4236 /* Pods_Katana.framework */; };
 		4FCF7DF515FC6B2995471095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47E318AACF9E02F567AAB472 /* UIKit.framework */; };
 		54FB0011DB058C172B9E33DB /* SideEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9063CAAF810DC88926E724E /* SideEffectTests.swift */; };
 		55286AFAABE9C4E27A6211D9 /* LegacyMiddlewareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF678AA00E4FD11492DB0F /* LegacyMiddlewareTests.swift */; };
@@ -33,6 +32,7 @@
 		95B6941E87720643E0577E12 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77CC3DC494C116F6DFB8D2 /* Types.swift */; };
 		99C2124E1C4853CC0D43F76A /* Katana.h in Headers */ = {isa = PBXBuildFile; fileRef = 02039C871C688D76EBE479F8 /* Katana.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B7FFF6ACB87FE1BF6E6D09B /* ObserverInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DAB356FB13CF5BD3D07BC /* ObserverInterceptor.swift */; };
+		9EA20BE2A85A8BE7B6758D4D /* Pods_KatanaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74634C0B41FCEA2D340958A7 /* Pods_KatanaTests.framework */; };
 		9F71E8319245F3E9757A3B51 /* LegacyStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567BA42F6829F35E84ECAC8C /* LegacyStoreTests.swift */; };
 		A57B99E1595A02E8B4BFBE1E /* SideEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BCE2A5E2EE4ABBE8BDEBB1 /* SideEffect.swift */; };
 		A6F70EFF5274BA6774BE5D4B /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DA9C3F175471385BC71C0E /* State.swift */; };
@@ -67,10 +67,8 @@
 		02039C871C688D76EBE479F8 /* Katana.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Katana.h; sourceTree = "<group>"; };
 		068448A47AB4FF4A80D5E223 /* LegacyActions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyActions.swift; sourceTree = "<group>"; };
 		145A66CE635E978F4DF0F9BF /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
-		1792C8241CAA70B53411891A /* Pods-Katana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Katana/Pods-Katana.debug.xcconfig"; sourceTree = "<group>"; };
 		1E7C14289CEE11E7AE24926F /* LegacyActionDescriptionTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyActionDescriptionTests.swift; sourceTree = "<group>"; };
 		1FCF678AA00E4FD11492DB0F /* LegacyMiddlewareTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyMiddlewareTests.swift; sourceTree = "<group>"; };
-		213E3BA09F4466AD84971902 /* Pods-KatanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatanaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KatanaTests/Pods-KatanaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2ECC1C84E97219AA8E1CD51D /* ObserverInterceptorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObserverInterceptorTests.swift; sourceTree = "<group>"; };
 		3677231A16A375B5CD3FAB21 /* LinkeableAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LinkeableAction.swift; sourceTree = "<group>"; };
 		383627495B9D649724B73C82 /* LegacyAsyncActionTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyAsyncActionTests.swift; sourceTree = "<group>"; };
@@ -86,30 +84,32 @@
 		5BB9BD09F35B16C588AFEF32 /* Dispatchable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dispatchable.swift; sourceTree = "<group>"; };
 		5EC6E342950FF116DBF0D98F /* Promise+Katana.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Promise+Katana.swift"; sourceTree = "<group>"; };
 		61DA9C3F175471385BC71C0E /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		66E657338A3B298A7409F29D /* Pods-Katana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.release.xcconfig"; path = "Target Support Files/Pods-Katana/Pods-Katana.release.xcconfig"; sourceTree = "<group>"; };
 		673E5DD5270EAF40BBB8CC0C /* ActionLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionLogger.swift; sourceTree = "<group>"; };
 		69BCE2A5E2EE4ABBE8BDEBB1 /* SideEffect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SideEffect.swift; sourceTree = "<group>"; };
 		69DCD6A76CDBAA5049B29D09 /* Action.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		6B8AF93A85506EA8AA835ACB /* Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		781B0AAC55B7EE851495224A /* Pods-KatanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatanaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KatanaTests/Pods-KatanaTests.release.xcconfig"; sourceTree = "<group>"; };
+		74634C0B41FCEA2D340958A7 /* Pods_KatanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA099DDCCAFCC695FFA33F7 /* Interceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
 		844D0B99CC3A9DB7ABF7D8CD /* ActionLinker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionLinker.swift; sourceTree = "<group>"; };
+		85F6EC41903B6EDE6D2E3734 /* Pods-KatanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatanaTests.release.xcconfig"; path = "Target Support Files/Pods-KatanaTests/Pods-KatanaTests.release.xcconfig"; sourceTree = "<group>"; };
 		872C8EC8C3DBD192CFB3436F /* LegacyDependencyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyDependencyContainer.swift; sourceTree = "<group>"; };
-		9692BAB0AF1940D6AB41CCEC /* Pods_KatanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KatanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4D52924B2781B29DFEE91B /* LegacyActionLinkerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LegacyActionLinkerTests.swift; sourceTree = "<group>"; };
 		9E0F34EEE33E9DAFAE82B00B /* KatanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EF6DACFE402807510F4A26B /* DispatchableLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchableLogger.swift; sourceTree = "<group>"; };
+		A00176331F7166B500F7089E /* Pods-Katana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.debug.xcconfig"; path = "Target Support Files/Pods-Katana/Pods-Katana.debug.xcconfig"; sourceTree = "<group>"; };
 		A15DAB356FB13CF5BD3D07BC /* ObserverInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ObserverInterceptor.swift; sourceTree = "<group>"; };
-		ADEF8D5D71EEA00F2F5DFC70 /* Pods-Katana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.release.xcconfig"; path = "Pods/Target Support Files/Pods-Katana/Pods-Katana.release.xcconfig"; sourceTree = "<group>"; };
 		B6C9F24C8E581B95AA6AD190 /* AsyncAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AsyncAction.swift; sourceTree = "<group>"; };
-		C50C088FA6B36DF4BB1FA1DE /* Pods_Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9CEEB948A6811DF05E96A48 /* ActionLinks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActionLinks.swift; sourceTree = "<group>"; };
 		CBCA8D0060EEF0DDE9F77AEA /* StoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoreTests.swift; sourceTree = "<group>"; };
 		CF47DA95112711FBC5DEEBF6 /* StateUpdater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateUpdater.swift; sourceTree = "<group>"; };
 		CF4ADE106FB56CC70AF1CD81 /* StoreInterceptorsTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StoreInterceptorsTests.swift; sourceTree = "<group>"; };
 		D9063CAAF810DC88926E724E /* SideEffectTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SideEffectTests.swift; sourceTree = "<group>"; };
 		D96CE3242A26D096D40B4D36 /* SideEffectDependencyContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SideEffectDependencyContainer.swift; sourceTree = "<group>"; };
+		DF98471F54D509D1E8CE4236 /* Pods_Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA52B1AE0599AD513EA4582 /* StateUpdaterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StateUpdaterTests.swift; sourceTree = "<group>"; };
 		E190923ED545C99877137CA0 /* Store.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		FAD47D091E04A342E8BB0D67 /* Pods-KatanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KatanaTests.debug.xcconfig"; path = "Target Support Files/Pods-KatanaTests/Pods-KatanaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE45DEF0CBBE2C8E34699703 /* TestDependenciesContainer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TestDependenciesContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +121,7 @@
 				EE4737FD912FA83C88BFB10A /* Katana.framework in Frameworks */,
 				B17622EC619F9A2E81152AA0 /* Foundation.framework in Frameworks */,
 				00B1F59F5948B4C7012968E2 /* UIKit.framework in Frameworks */,
-				3B1356E21E776DA327969AC3 /* Pods_KatanaTests.framework in Frameworks */,
+				9EA20BE2A85A8BE7B6758D4D /* Pods_KatanaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,13 +131,25 @@
 			files = (
 				E567F693131C6B2B98086565 /* Foundation.framework in Frameworks */,
 				4FCF7DF515FC6B2995471095 /* UIKit.framework in Frameworks */,
-				11707534172E0265D7D3986E /* Pods_Katana.framework in Frameworks */,
+				301BF6260D13372FA57D128A /* Pods_Katana.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CCA30185C23135A90F67FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A00176331F7166B500F7089E /* Pods-Katana.debug.xcconfig */,
+				66E657338A3B298A7409F29D /* Pods-Katana.release.xcconfig */,
+				FAD47D091E04A342E8BB0D67 /* Pods-KatanaTests.debug.xcconfig */,
+				85F6EC41903B6EDE6D2E3734 /* Pods-KatanaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		095FAE24C14E904A029D938F /* Legacy */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +183,7 @@
 				C3C529D6A3122B2233C2D273 /* Frameworks */,
 				0D17EBD9AE995F0D789DCA5A /* KatanaTests */,
 				B88744E9436A89509D22362C /* Katana */,
-				64EE6CD5E42C5E1BF3C3D149 /* Pods */,
+				08CCA30185C23135A90F67FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,17 +221,6 @@
 				FE45DEF0CBBE2C8E34699703 /* TestDependenciesContainer.swift */,
 			);
 			path = Mocks;
-			sourceTree = "<group>";
-		};
-		64EE6CD5E42C5E1BF3C3D149 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1792C8241CAA70B53411891A /* Pods-Katana.debug.xcconfig */,
-				ADEF8D5D71EEA00F2F5DFC70 /* Pods-Katana.release.xcconfig */,
-				213E3BA09F4466AD84971902 /* Pods-KatanaTests.debug.xcconfig */,
-				781B0AAC55B7EE851495224A /* Pods-KatanaTests.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		8FDE9C275D79F706A34023E2 /* Products */ = {
@@ -288,8 +289,8 @@
 			isa = PBXGroup;
 			children = (
 				25A6F5790AF5EAC85E91ECDB /* iOS */,
-				C50C088FA6B36DF4BB1FA1DE /* Pods_Katana.framework */,
-				9692BAB0AF1940D6AB41CCEC /* Pods_KatanaTests.framework */,
+				DF98471F54D509D1E8CE4236 /* Pods_Katana.framework */,
+				74634C0B41FCEA2D340958A7 /* Pods_KatanaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -321,7 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B06B6BE8282A67B6C9A49F5 /* Build configuration list for PBXNativeTarget "Katana" */;
 			buildPhases = (
-				2EBC2004C158B3070E45AE47 /* [CP] Check Pods Manifest.lock */,
+				CD30FFFE57388C651FA52836 /* [CP] Check Pods Manifest.lock */,
 				BB75085EC180BF5E0DD80F10 /* Frameworks */,
 				9C4F6B4860284528D07F996C /* Sources */,
 				0031E45B995D2416DB1DC75A /* Headers */,
@@ -339,10 +340,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83ED2F52C4FF83EA40A20CE8 /* Build configuration list for PBXNativeTarget "KatanaTests" */;
 			buildPhases = (
-				FACA76D48A38ADC255410BA1 /* [CP] Check Pods Manifest.lock */,
+				5ED3B0F25D6D14427F0BD802 /* [CP] Check Pods Manifest.lock */,
 				598D20C2D850EF07F3035D40 /* Frameworks */,
 				6AE007C2A09F2EF2FB1EC791 /* Sources */,
-				3ED3AC34867273A2399873FA /* [CP] Embed Pods Frameworks */,
+				F8752735C3BA7C3065C9DCF7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,7 +384,29 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2EBC2004C158B3070E45AE47 /* [CP] Check Pods Manifest.lock */ = {
+		5ED3B0F25D6D14427F0BD802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KatanaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD30FFFE57388C651FA52836 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -405,7 +428,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3ED3AC34867273A2399873FA /* [CP] Embed Pods Frameworks */ = {
+		F8752735C3BA7C3065C9DCF7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,28 +448,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KatanaTests/Pods-KatanaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FACA76D48A38ADC255410BA1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KatanaTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -516,7 +517,7 @@
 /* Begin XCBuildConfiguration section */
 		076A6637DD824B23268EA100 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1792C8241CAA70B53411891A /* Pods-Katana.debug.xcconfig */;
+			baseConfigurationReference = A00176331F7166B500F7089E /* Pods-Katana.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -543,7 +544,7 @@
 		};
 		4CBFB7CA4AF37796D10E8111 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADEF8D5D71EEA00F2F5DFC70 /* Pods-Katana.release.xcconfig */;
+			baseConfigurationReference = 66E657338A3B298A7409F29D /* Pods-Katana.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -570,7 +571,7 @@
 		};
 		6610EA1BC23C892719A57B39 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 213E3BA09F4466AD84971902 /* Pods-KatanaTests.debug.xcconfig */;
+			baseConfigurationReference = FAD47D091E04A342E8BB0D67 /* Pods-KatanaTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KatanaTests/Info.plist;
@@ -627,6 +628,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -635,7 +637,7 @@
 		};
 		C28DA25DB637D8D8EBA9FC7B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 781B0AAC55B7EE851495224A /* Pods-KatanaTests.release.xcconfig */;
+			baseConfigurationReference = 85F6EC41903B6EDE6D2E3734 /* Pods-KatanaTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KatanaTests/Info.plist;
@@ -698,6 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
