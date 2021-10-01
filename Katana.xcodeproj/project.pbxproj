@@ -146,7 +146,6 @@
 				FAD47D091E04A342E8BB0D67 /* Pods-KatanaTests.debug.xcconfig */,
 				85F6EC41903B6EDE6D2E3734 /* Pods-KatanaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -363,6 +362,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					D0EA2A8731D58C26BCE3F846 = {
+						DevelopmentTeam = 98F56W66JZ;
+					};
+				};
 			};
 			buildConfigurationList = 98C8CB628C91A1796A83855D /* Build configuration list for PBXProject "Katana" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -574,6 +578,7 @@
 			baseConfigurationReference = FAD47D091E04A342E8BB0D67 /* Pods-KatanaTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 98F56W66JZ;
 				INFOPLIST_FILE = KatanaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -640,6 +645,7 @@
 			baseConfigurationReference = 85F6EC41903B6EDE6D2E3734 /* Pods-KatanaTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 98F56W66JZ;
 				INFOPLIST_FILE = KatanaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
