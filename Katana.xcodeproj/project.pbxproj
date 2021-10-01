@@ -1,7 +1,8 @@
 // !$*UTF8*$!
 {
-	archiveVersion = "";
-	classes = "";
+	archiveVersion = 1;
+	classes = {
+	};
 	objectVersion = 46;
 	objects = {
 
@@ -146,7 +147,6 @@
 				438277B00AFC1535FA591721 /* ActionWithSideEffect.swift */,
 				479857B93D5A3C017080C938 /* LegacyStoreTypealiases.swift */,
 			);
-			name = Legacy;
 			path = Legacy;
 			sourceTree = "<group>";
 		};
@@ -161,7 +161,6 @@
 				D9063CAAF810DC88926E724E /* SideEffectTests.swift */,
 				CBCA8D0060EEF0DDE9F77AEA /* StoreTests.swift */,
 			);
-			name = KatanaTests;
 			path = KatanaTests;
 			sourceTree = "<group>";
 		};
@@ -191,7 +190,6 @@
 				ABB5D33AED6A9F77526F659B /* Core */,
 				373E80363F67556CD89AA1BF /* Models */,
 			);
-			name = Legacy;
 			path = Legacy;
 			sourceTree = "<group>";
 		};
@@ -201,7 +199,6 @@
 				068448A47AB4FF4A80D5E223 /* LegacyActions.swift */,
 				872C8EC8C3DBD192CFB3436F /* LegacyDependencyContainer.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -211,7 +208,6 @@
 				61DA9C3F175471385BC71C0E /* State.swift */,
 				FE45DEF0CBBE2C8E34699703 /* TestDependenciesContainer.swift */,
 			);
-			name = Mocks;
 			path = Mocks;
 			sourceTree = "<group>";
 		};
@@ -242,7 +238,6 @@
 				844D0B99CC3A9DB7ABF7D8CD /* ActionLinker.swift */,
 				C9CEEB948A6811DF05E96A48 /* ActionLinks.swift */,
 			);
-			name = ActionLinker;
 			path = ActionLinker;
 			sourceTree = "<group>";
 		};
@@ -253,7 +248,6 @@
 				A15DAB356FB13CF5BD3D07BC /* ObserverInterceptor.swift */,
 				7AA099DDCCAFCC695FFA33F7 /* Interceptor.swift */,
 			);
-			name = Interceptor;
 			path = Interceptor;
 			sourceTree = "<group>";
 		};
@@ -268,7 +262,6 @@
 				1E7C14289CEE11E7AE24926F /* LegacyActionDescriptionTests.swift */,
 				383627495B9D649724B73C82 /* LegacyAsyncActionTests.swift */,
 			);
-			name = Core;
 			path = Core;
 			sourceTree = "<group>";
 		};
@@ -288,7 +281,6 @@
 				3F77CC3DC494C116F6DFB8D2 /* Types.swift */,
 				02039C871C688D76EBE479F8 /* Katana.h */,
 			);
-			name = Katana;
 			path = Katana;
 			sourceTree = "<group>";
 		};
@@ -308,7 +300,6 @@
 				673E5DD5270EAF40BBB8CC0C /* ActionLogger.swift */,
 				A6641B54382912BCA59DDE8C /* ActionLinker */,
 			);
-			name = Middleware;
 			path = Middleware;
 			sourceTree = "<group>";
 		};
@@ -377,6 +368,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 14F20C58E62B9F87322E849E;
@@ -418,8 +410,6 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-KatanaTests/Pods-KatanaTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HydraAsync/Hydra.framework",
@@ -427,8 +417,6 @@
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hydra.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
@@ -538,7 +526,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Katana/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = Katana;
 				SDKROOT = iphoneos;
@@ -564,13 +553,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Katana/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = Katana;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -653,8 +642,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
