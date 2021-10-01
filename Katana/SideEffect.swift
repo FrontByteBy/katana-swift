@@ -98,7 +98,7 @@ public extension AnySideEffectContext {
    - parameter dispatchable: the item to dispatch
   */
   func awaitDispatch(_ dispatchable: Dispatchable) throws {
-    try await(self.dispatch(dispatchable))
+      try Hydra.await(self.dispatch(dispatchable))
   }
 }
 
